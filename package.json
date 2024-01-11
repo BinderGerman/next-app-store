@@ -7,9 +7,11 @@
     "build": "next build",
     "start": "next start",
     "format": "prettier --write .",
-    "lint": "next lint"
+    "lint": "next lint",
+    "fake-api": "json-server --watch src/app/api/db.json --port 5000"
   },
   "dependencies": {
+    "json-server": "^0.17.4",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18"
