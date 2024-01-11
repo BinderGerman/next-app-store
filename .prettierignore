@@ -1,0 +1,9 @@
+.eslintrc.json
+.prettierrc
+next.config.js
+package-lock.json
+package.json
+postcss.config.js
+README.md 
+tailwind.config.ts
+tsconfig.json
