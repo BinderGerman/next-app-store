@@ -5,16 +5,24 @@ export default function ProductsPage({
   products,
 }: IPropsToProductsPage): JSX.Element {
   return (
-    <div className='w-full bg-emerald-400 flex flex-wrap gap-4 justify-around mt-5'>
+    <div className='w-full flex flex-wrap gap-5 justify-around mt-5 animate-fade-up animate-once animate-duration-[1500ms] animate-ease-linear'>
       {products.map(product => (
-        <Link href={`/product/${product.id}`} key={product.id}>
-          <div className='w-80 bg-slate-400 rounded-md drop-shadow-lg'>
-            <img src={product.image} />
-            <h2>{product.title}</h2>
-            <h3>{product.description}</h3>
-            <p>Price: {product.price}</p>
+        <div className='card w-96 shadow-xl bg-base-100' key={product.id}>
+          <img
+            className='bg-cover max-h-52'
+            src={product.image}
+            alt={product.title}
+          />
+          <div className='card-body'>
+            <h2 className='card-title'>{product.title}</h2>
+            <p>{product.description}</p>
+            <div className='card-actions justify-end'>
+              <Link href={`/product/${product.id}`}>
+                <button className='btn btn-outline btn-info'>More Info</button>
+              </Link>
+            </div>
           </div>
-        </Link>
+        </div>
       ))}
     </div>
   )
