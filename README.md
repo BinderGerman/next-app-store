@@ -11,7 +11,7 @@ Pasos para poder correr el proyecto localmente:
 4. En una segunda terminal correr el comando `npm run dev` 
 5. Si todo salió correctamente deberiamos ver  el proyecto en la siguiente URL: `http://localhost:3000/`
 
-## Autores
+## Autor
 - Creador: Germán Binder
 
 ## Status del proyecto
@@ -32,7 +32,7 @@ Steps to run the project locally:
 4. In a second terminal run the command `npm run dev`
 5. If everything went correctly we should see the project at the following URL: `http://localhost:3000/`
 
-## Authors
+## Author
 - Creator: Germán Binder
 
 ## Project status
